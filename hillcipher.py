@@ -14,8 +14,7 @@ def encrypt(messageVector):
 		for j in range(1):
 			cipherMatrix[i][j] = 0
 			for x in range(3):
-				cipherMatrix[i][j] += (keyMatrix[i][x] *
-									messageVector[x][j])
+				cipherMatrix[i][j] += (keyMatrix[i][x] *messageVector[x][j])
 			cipherMatrix[i][j] = cipherMatrix[i][j] % 26
 
 def HillCipher(message, key):
